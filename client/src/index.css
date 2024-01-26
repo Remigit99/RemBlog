@@ -1,15 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
 
-:root {
-  font-family: "Nunito Sans", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+:root {
+
+  --color-black: #000000;
+  --color-white: #fff;
+
+  --container-width-lg: 86%;
+  --container-width-md: 90%;
+  --container-width-sm: 96%;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100dvh;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  /* background-color: red; */
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+}
+
+a {
+  color: var(--color-white);
+}
+
+
+/*=============== NAVBAR ==============*/
+
+nav {
+  display: grid;
+  place-items: center;
+  height: 4.5rem;
+  width: 100dvw;
+  background-color: rgba(255, 255, 255, 0.534);
+  backdrop-filter: blur(10px);
+  border-bottom: 4px solid red;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
 }
