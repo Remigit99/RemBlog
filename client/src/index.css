@@ -22,6 +22,9 @@
   --container-width-sm: 96%;
 
 
+  --transition: all 350ms ease;
+
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -76,4 +79,69 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 2.5rem;
+}
+
+.menu__toggle-btn {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/*=============== ERROR PAGE ==============*/
+.error_page-container {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.return__home-btn {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.return__btn {
+  background-color: antiquewhite;
+  padding: 0.5rem 1rem;
+}
+
+
+
+
+/*=============== FOOTER ==============*/
+footer {
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  color: #f3eaea;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.footer__container .footer__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer__categories li {
+  background-color: #242424;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.5rem;
+  transition: var(--transition);
+}
+
+.footer__categories li:hover {
+  box-shadow: 0 2px 2px rgb(68, 68, 68);
+}
+
+.copyright {
+  padding-top: 0.7rem;
+  border-top: 1px solid gray;
 }

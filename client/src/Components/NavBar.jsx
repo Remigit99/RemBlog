@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import { RiMenu3Line } from "react-icons/ri";
+import { IoCloseSharp } from "react-icons/io5";
 
 const NavBar = () => {
     return (
@@ -18,6 +20,11 @@ const NavBar = () => {
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/login">Login</Link></li>
                 </ul>
+
+                <div className="menu__toggle-btn">
+                    <RiMenu3Line />
+                    <IoCloseSharp />
+                </div>
             </div>
         </nav>
     )
