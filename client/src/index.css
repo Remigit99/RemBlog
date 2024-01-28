@@ -32,7 +32,7 @@
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", Montserrat, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   height: 100dvh;
@@ -49,6 +49,17 @@ body {
 a {
   color: var(--color-white);
 }
+
+section {
+  margin: 6.5rem 0 1.5rem 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 
 /*=============== NAVBAR ==============*/
@@ -85,6 +96,34 @@ nav {
   display: none;
 }
 
+
+/*=============== HOME PAGE==============*/
+
+.post__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.75rem;
+}
+
+.post {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1.1rem;
+  color: var(--color-black);
+}
+
+.post__img img {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.post__title-body {
+  margin: 1rem 0;
+}
+
+.post__title-body h3 {
+  margin-bottom: 0.5rem;
+}
 
 
 
