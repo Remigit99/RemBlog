@@ -1,9 +1,9 @@
-// import React from 'react'
+import { Link } from "react-router-dom"
+
+import PostAuthor from "./PostAuthor"
 
 
 const PostItem = ({ postID, postImg, title, body, category, authorID }) => {
-
-
 
     return (
         <article className="post">
@@ -11,13 +11,17 @@ const PostItem = ({ postID, postImg, title, body, category, authorID }) => {
                 <img src={postImg} alt={title} />
             </div>
             <div className="post__title-body">
-                <h3>{title}</h3>
-                {/* <p>{body.length > 10 ? body.substring(5) : body}</p> */}
-                <p>{body}</p>
+                <Link to={`/posts/${postID}`}>
+                    <h3>{title.length > 32 ? title.substring(0, 30) + "..." : title}</h3>
+                </Link>
+                <p>{body.length > 100 ? body.substring(0, 120) + "..." : body}</p>
             </div>
             <div className="author__cat">
-                <div className="author">
-
+                <PostAuthor />
+                <div className="author__post-cat">
+                    <Link to={`/posts/categories/${category}`}>
+                        {category}
+                    </Link>
                 </div>
             </div>
 

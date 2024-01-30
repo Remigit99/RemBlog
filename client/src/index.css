@@ -60,6 +60,26 @@ img {
   object-fit: cover;
 }
 
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.btn__edit {
+  background-color: green;
+  color: var(--color-white);
+}
+
+.btn__delete {
+  background-color: coral;
+  color: var(--color-white);
+}
+
+p {
+  font-size: 0.85rem;
+}
+
 
 
 /*=============== NAVBAR ==============*/
@@ -121,10 +141,79 @@ nav {
   margin: 1rem 0;
 }
 
-.post__title-body h3 {
+.post__title-body a {
+  color: var(--color-black);
+}
+
+.post__title-body a h3 {
   margin-bottom: 0.5rem;
 }
 
+
+.author__info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.author__avatar img {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+}
+
+.author__name {
+  color: var(--color-black);
+}
+
+.author__cat {
+  color: var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.author__post-cat a {
+  background-color: rgb(219, 238, 255);
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  color: var(--color-black);
+
+}
+
+/*=============== POST DETAILS PAGE ==============*/
+.post__details-container {
+  padding: 0.5rem 3rem;
+  background-color: aliceblue;
+  width: 50%;
+  color: var(--color-black);
+}
+
+.post__details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 1rem;
+  margin-bottom: 1.5rem;
+
+}
+
+.post__details-btns {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.post__details-body {
+  color: #242424;
+  margin: 1rem 0;
+}
+
+.post__details-desc p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
 
 
 
@@ -142,11 +231,15 @@ nav {
 .return__home-btn {
   text-align: center;
   margin-bottom: 2.5rem;
+
 }
 
 .return__btn {
   background-color: antiquewhite;
   padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: #242424;
+  font-weight: 900;
 }
 
 
