@@ -64,6 +64,8 @@ img {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   transition: var(--transition);
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .btn__edit {
@@ -74,6 +76,14 @@ img {
 .btn__delete {
   background-color: coral;
   color: var(--color-white);
+}
+
+input,
+textarea {
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  font-weight: 500;
 }
 
 p {
@@ -213,7 +223,77 @@ nav {
 .post__details-desc p {
   margin: 1rem 0;
   font-size: 1rem;
+  margin-inline: auto;
 }
+
+
+/*=============== REGISTER PAGE ==============*/
+
+.register__container,
+.login__container {
+  width: 50%;
+  height: calc(100vh - 10rem);
+  padding: 5rem 0 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+
+
+
+
+/*=============== PROFILE PAGE ==============*/
+
+.profile__container {
+  width: 50%;
+}
+
+.my__posts-profile {
+  display: grid;
+  place-content: center;
+}
+
+.my__posts {
+  padding: 0.6rem 1.2rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+
+}
+
+.profile__container h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.profile__avatar {
+  margin-bottom: 1.8rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__avatar img {
+  width: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid aliceblue;
+}
+
+.btn-update {
+  background-color: palevioletred;
+  width: fit-content;
+  color: var(--color-white);
+  font-weight: 700;
+}
+
 
 
 

@@ -14,11 +14,11 @@ const NavBar = () => {
                 </div>
 
                 <ul className="nav__links">
-                    <li><Link to="/login">Login</Link></li>
-                    <li><Link to="/login">Login</Link></li>
-                    <li><Link to="/login">Login</Link></li>
-                    <li><Link to="/login">Login</Link></li>
-                    <li><Link to="/login">Login</Link></li>
+                    <li><Link to="/login">Aderemi Abiodun</Link></li>
+                    <li><Link to="/login">Create Post</Link></li>
+                    <li><Link to="/login">Authors</Link></li>
+                    <li><Link to="/login">Logout</Link></li>
+                    {/* <li><Link to="/login">Login</Link></li> */}
                 </ul>
 
                 <div className="menu__toggle-btn">
